@@ -1,0 +1,4 @@
+files/cdn
+#For the DMCA compliance and avoiding unnecessary assets.
+*.jpg
+*.ico

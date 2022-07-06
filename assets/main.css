@@ -1,0 +1,23 @@
+body{
+    font-family: 'Arial';
+    box-sizing: border-box;
+}
+.header{
+    padding: 0.1ch;
+    background: rgb(100, 90, 100);
+    z-index: 1;
+    width: 97vw;
+    position: fixed;
+}
+embed{
+    z-index: 0;
+    margin: -10vh;
+    height: 121vh;
+    width: 108vw;
+    position: fixed;
+    opacity: 0.8;
+}
+a{
+    color: black;
+    text-decoration-line: none;
+}
