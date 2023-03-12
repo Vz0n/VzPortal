@@ -1,4 +1,7 @@
 files/cdn
-#For the DMCA compliance and avoiding unnecessary assets.
+#Media files, put your own icons and images.
 *.jpg
 *.ico
+*.txt
+*.mp4
+*.mp3

@@ -19,7 +19,7 @@ ul.content{
     padding: 2ex;
     margin-left: 5px;
     list-style-type: none;
-    transition: background-color, border-radius .2s;
+    transition: background-color .1s, border-radius .2s;
 }
 .ul-item:hover{
     background-color:aqua;

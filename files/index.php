@@ -1,16 +1,13 @@
 <?php
 function getfiles(){
     $dir = opendir("./cdn");
-    $arr = array();
-    $counter = 0;
-    while($stream = readdir($dir)){ 
-        if($stream == "." || $stream == ".."){
+    while($dir = readdir()){ 
+        //Never wanted to show another directories
+        if(is_dir($dir)){
            continue; 
         }
-        $arr[$counter] = $stream;
-        $counter += 1;
+        echo "<li><a href='https://vzondev.cf/files/cdn/" . $dir . "'>" . $dir . "</a></li>";
     }
-    return $arr;
 }
 
 //Descriptor function
@@ -39,10 +36,7 @@ function getFileDesc($file){
                 </p>
                 <ul class="files" title="Archivos para descargar.">
                 <?php
-                   $arr = getfiles();
-                   for($i = 0;$i < sizeof($arr);$i++){
-                       echo "<li><a href='https://vzondev.cf/files/cdn/" . $arr[$i] . "'>" . $arr[$i] . "</a></li>";
-                   } 
+                  getfiles();
                 ?>
                 </ul>
             </section>
